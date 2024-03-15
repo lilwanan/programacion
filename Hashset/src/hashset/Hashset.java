@@ -6,6 +6,7 @@ package hashset;
 
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 
 /**
  *
@@ -47,6 +48,13 @@ public class Hashset {
         }
         String prueba="Pepe";
         System.out.println(nombres.contains(prueba));
+        
+        
+        LinkedHashSet<String> names = new LinkedHashSet<>();
+        names.add("Juan");
+        names.add("Pepe");
+        names.add("Elena");
+        System.out.println(names);
     }
     
     

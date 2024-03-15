@@ -5,6 +5,7 @@
 package personahash;
 
 import java.util.HashSet;
+import java.util.TreeSet;
 
 /**
  *
@@ -27,6 +28,8 @@ public class PersonaHash {
         personas.add(p2);
         System.out.println(personas);
         System.out.println(personas.contains(p1));
+        
+        TreeSet<Persona> personass = new TreeSet <>();
     }
     
 }

@@ -10,7 +10,7 @@ import java.util.Objects;
  *
  * @author medac
  */
-public class Persona {
+public class Persona implements Comparable <Persona> {
     String nombre;
     String dni;
     int edad;
@@ -59,6 +59,11 @@ public class Persona {
             return false;
         }
         return Objects.equals(this.dni, other.dni);
+    }
+
+    @Override
+    public int compareTo(Persona o) {
+        return (edad-o.edad);
     }
 
 }
