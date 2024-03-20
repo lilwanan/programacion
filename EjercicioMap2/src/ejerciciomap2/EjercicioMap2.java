@@ -27,7 +27,7 @@ public class EjercicioMap2 {
             System.out.println("Introduce usuario y contraseña");
             String usuario = sc.next();
             String contra = sc.next();
-            if(hack.containsKey(hack.get(usuario))&& hack.containsValue(hack.get(contra))){
+            if(hack.containsKey(usuario)&& hack.get(usuario).equals(contra)){
                 
                 System.out.println("Sesion iniciado");
                 cont=4;
@@ -35,7 +35,7 @@ public class EjercicioMap2 {
                 System.out.println("error");
                 cont++;
             }
-        } while (cont < 4);
+        } while (cont <= 3);
     }
     
 }
